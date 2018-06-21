@@ -11,7 +11,16 @@
 </p>
 
 <div class="todo_item_wrapper">
-  <%= render @todo_list.todo_items %>
+  <table>
+    <thead>
+      <td>Item</td>
+      <td>Mark Complete</td>
+      <td>Delete</td>
+    </thead>
+
+      <%= render @todo_list.todo_items %>
+
+  </table>
   <div class="form">
     <%= render "todo_items/form" %>
   </div>
